@@ -11,7 +11,7 @@ Java_com_yk_itg_MainActivity_stringFromJNI(
 }
 
 extern "C" JNIEXPORT jstring  JNICALL
-Java_com_yk_itg_MainActivity_getStringFromJNI(JNIEnv *env, jobject) {
+Java_com_yk_itg_MainActivity_getStringFromJNI(JNIEnv *env, jobject ) {
     std::string hello = "Hello from --- ";
     return env->NewStringUTF(hello.c_str());
 }
